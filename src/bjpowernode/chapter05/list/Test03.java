@@ -1,4 +1,4 @@
-package bjpowernode.chapter05;
+package bjpowernode.chapter05.list;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package bjpowernode.chapter05;
+package bjpowernode.chapter05.list;
 
 /**
  * List集合中contains（）/remove（）等方法，需要调用对象的equals（）方法

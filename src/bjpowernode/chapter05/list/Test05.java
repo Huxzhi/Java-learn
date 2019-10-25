@@ -1,4 +1,4 @@
-package bjpowernode.chapter05;
+package bjpowernode.chapter05.list;
 
 /**
  * 创建一个学生管理类
