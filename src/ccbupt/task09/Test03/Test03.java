@@ -61,7 +61,7 @@ class MusicCup2 implements Cup, MusicPlayer{
 
 	@Override
 	public void addWater() {
-		// TODO Auto-generated method stub
+
 		if(water==5){
 			System.out.println("水满了");
 		}
