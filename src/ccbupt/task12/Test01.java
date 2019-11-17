@@ -25,7 +25,7 @@ public class Test01 {
             System.out.println("请输入此人的国籍(国籍以英文形式输入)");
             cyString = input.next();
             if (map.containsKey(cyString)) {
-                map.put(cyString, map.get(cyString) + 1);
+                map.replace(cyString, map.get(cyString) + 1);
             } else {
                 map.put(cyString, 1);
             }

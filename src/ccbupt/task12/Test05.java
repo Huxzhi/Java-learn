@@ -17,6 +17,7 @@ import java.util.Scanner;
  * @author Huxzhi
  * @date 2019/11/15
  */
+
 public class Test05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
