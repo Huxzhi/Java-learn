@@ -47,9 +47,8 @@ public class Test02 {
             rateMap.put(movieId, ave);
         }
 
-
         List<Map.Entry<Long, Double>> entrys = new ArrayList<>(rateMap.entrySet());
-//2：调用Collections.sort(list,comparator)方法把Entry-list排序
+        //2：调用Collections.sort(list,comparator)方法把Entry-list排序
         Collections.sort(entrys, new Comparator<Map.Entry<Long, Double>>() {
             @Override
             public int compare(Map.Entry<Long, Double> o1, Map.Entry<Long, Double> o2) {
@@ -73,7 +72,6 @@ public class Test02 {
         for (Map.Entry<Long, Double> longDoubleEntry : rateMap.entrySet()) {
             System.out.println(longDoubleEntry.getKey() + ":" + longDoubleEntry.getValue());
         }
-
 
         // 写到文件中
         String path = "src/ccbupt/task13/data/result.txt";
@@ -103,8 +101,6 @@ public class Test02 {
         }
 
     }
-//2：调用Collections.sort(list,comparator)方法把Entry-list排序
-
 
     static class Ratings {
         double ratings;
