@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>18160217</title>
+    <style>
+        p{color: chocolate;}
+    </style>
+    <script>
+        window.onload = init;
+        var atari = Math.floor(Math.random() * 3);
+
+        function init() {
+            var e = document.getElementById("block");
+            e.innerHTML = "<h3>どれにしますか？</h3>" +
+                "<div>" +
+                "<img src='box_close.gif' onclick='openBox(0)'>" +
+                "<img src='box_close.gif' onclick='openBox(1)'>" +
+                "<img src='box_close.gif' onclick='openBox(2)'>" +
+                "</div>"
+        }
+
+        function openBox(i) {
+            var e = document.getElementById("block");
+            if (atari === i) {
+                e.innerHTML = "<h3>当たり！</h3>" +
+                    "<img src='box_open.gif'>"+
+                    "<p>良かったですね！</p>";
+            } else {
+                e.innerHTML = "<h3>はずれ</h3>" +
+                    "<img src='box_open_empty.gif'>"+
+                    "<p>中にはなにもありません</p>";
+            }
+            e.innerHTML += "<br><input type='button' onclick='init();' value='もう一度'>";
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="block" style="text-align: center;"></div>
+</body>
+
+
+
+</html>
